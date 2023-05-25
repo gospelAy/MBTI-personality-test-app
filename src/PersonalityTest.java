@@ -55,26 +55,27 @@ public class PersonalityTest {
         int sumOfAsInJudging = sum(judgingVsPerceivingAnswersStorage);
 
 
-        if ( sumOfAsInExtroversion & lt;
-        )result.append("I");
-else{
+        if (sumOfAsInExtroversion < 3) {
+            result.append("I");
+        } else {
             result.append("E");
         }
-        if ( sumOfAsInSensing & lt;
-        3)result.append("N");
-else{
+        if (sumOfAsInSensing < 3) {
+            result.append("N");
+        } else {
             result.append("S");
         }
-        if ( sumOfAsInThinking & lt;
-        3)result.append("F");
-else{
+        if (sumOfAsInThinking < 3) {
+            result.append("F");
+        } else {
             result.append("T");
         }
-        if ( sumOfAsInJudging & lt;
-        3)result.append("P");
-else{
+        if (sumOfAsInJudging < 3) {
+            result.append("P");
+        } else {
             result.append("J");
         }
+
         System.out.println("\nYour choice at a glance\n");
         System.out.printf("|%5s | %3s | %3s | %3s | %3s | %3s | %3s | %3s | %3s | %3s | %3s | %3s |%n", " ", "A", "B", " ", "A", "B", " ", "A", "B", " ", "A", "B");
         int numbering = 1;
